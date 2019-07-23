@@ -23,7 +23,7 @@ module.exports = {
     },
     // 插件安装
     plugins: [
-        // 安装 HtmlWebpackPlugin 插件，通过一个模板帮助我们生成网站首页，网页自动嵌套
+        // 安装 HtmlWebpackPlugin 插件，通过一个模板帮助我们生成网站首页，将输入文件自动嵌套到首页当中
         // npm i html-webpack-plugin -D
         new HtmlWebpackPlugin({
             template: './src/tpl/index.html'
