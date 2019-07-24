@@ -2,10 +2,10 @@
  * @Author: Yx_Zou 
  * @Date: 2019-07-23 23:18:38 
  * @Last Modified by: Yx_Zou
- * @Last Modified time: 2019-07-23 23:22:45
+ * @Last Modified time: 2019-07-24 13:55:42
  */
 
-// 原始类型
+// 原始类
 /**
  * TS 变量的数据类型不可以被改变
  */
@@ -96,3 +96,93 @@ let error = () => {
 let endless = () => {
 	while (true) {}
 };
+
+// 枚举类型
+/** 
+ * 定义：一组有名字的常量集合，类似手机通讯录
+ * 两种：数字枚举和字符串枚举
+*/
+// 数字枚举
+/**
+ * 可以用名字与值来索引
+ * 原理：反向映射。key 与 value 互相成为对方的值与名称
+ */
+enum Role {
+	Reporter = 1,
+	Developer,
+	Maintainer,
+	Owner,
+	Guest
+}
+// 默认初始值是 0，如果规定初始值为 1，则后面对应成员会相对应的递增
+console.log(Role.Reporter); // 1
+console.log(Role.Guest); // 5
+console.log(Role[2]); // Developer
+
+// 字符串枚举
+// 不构成反向映射，只能用其名字获取
+enum Message {
+	Success = '恭喜你，成功了',
+	Fail = '抱歉，失败了'
+}
+
+// 异构枚举,即数字枚举与字符串枚举的混用
+// 一般不建议使用
+enum Answer {
+	N,
+	Y = 'Yes'
+}
+
+// 枚举成员
+// Role.Reporter = 2 // 报错，枚举的只读类型
+enum Char {
+	// const ,在编译时就会计算玩结果，3种赋值情况
+	a, // 无初始值
+	b = Char.a, // 对已有枚举成员的引用
+	c = 1 + 3, // 常量表达式
+	// computed，需要被计算的成员。不会编译时计算，保留到程序的执行阶段计算
+	d = Math.random(),
+	e = '123'.length
+	// 在 computed 后的成员，一定要有一个初始值
+	//f //报错
+}
+
+// 常量枚举
+/**
+ * 编译完成后会被移除
+ * 使用场景：当我们不需要对象，而需要一个对象的值的时候使用，减少编译环境中的代码
+ */
+const enum Month {
+	Jan,
+	Feb,
+	Mar
+}
+let month = [ Month.Jan, Month.Feb, Month.Mar ];
+console.log(month); // [0,1,2]
+
+// 枚举类型
+enum E {
+	a,
+	b
+}
+enum F {
+	a = 0,
+	b = 1
+}
+enum G {
+	a = 'apple',
+	b = 'banana'
+}
+
+let e: E = 3;
+let f: F = 3;
+//e === f; // 不同的枚举类型无法比较
+
+let e1: E.a = 1;
+let e2: F.b;
+let e3: E.a = 1;
+//e1 === e2 // 不同的枚举类型无法比较
+e1 === e3; // 相同的可以比较
+
+let g1: G = G.b;
+let g2: G.a = G.a; // 只能赋值给他自身
