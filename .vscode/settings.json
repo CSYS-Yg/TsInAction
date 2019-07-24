@@ -1,0 +1,11 @@
+{
+    // 配置作者名
+    "fileheader.Author": "Yx_Zou",
+    // 配置修改名
+    "fileheader.LastModifiedBy": "Yx_Zou",
+    "editor.fontSize": 16,
+    // 自动格式化 star
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+    // 自动格式化 end
+}
