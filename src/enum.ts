@@ -1,8 +1,9 @@
 /*
  * @Author: Yx_Zou 
+ * @Description: '07 | 接口（1）：对象类型接口' 
  * @Date: 2019-07-24 14:29:39 
  * @Last Modified by: Yx_Zou
- * @Last Modified time: 2019-07-24 16:06:22
+ * @Last Modified time: 2019-07-25 16:41:15
  */
 
 // 对象类型接口定义
