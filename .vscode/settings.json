@@ -6,6 +6,7 @@
     "editor.fontSize": 16,
     // 自动格式化 star
     "editor.formatOnType": true,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "typescript.tsdk": "node_modules\\typescript\\lib"
     // 自动格式化 end
 }
