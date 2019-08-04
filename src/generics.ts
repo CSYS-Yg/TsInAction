@@ -3,7 +3,7 @@
  * @Description: '13 | 泛型（1）：泛型函数与泛型接口' 
  * @Date: 2019-08-01 16:40:58 
  * @Last Modified by: Yx_Zou
- * @Last Modified time: 2019-08-01 17:17:44
+ * @Last Modified time: 2019-08-04 16:35:13
  */
 
 // 实现一个打印字符串或字符数组的类型，且返回相同类型
