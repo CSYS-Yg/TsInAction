@@ -3,7 +3,7 @@
  * @Description: '16 | 类型检查机制（2）：类型兼容性' 
  * @Date: 2019-08-05 13:44:04 
  * @Last Modified by: Yx_Zou
- * @Last Modified time: 2019-08-05 16:14:57
+ * @Last Modified time: 2019-08-05 17:00:59
  */
 
 // X 兼容 Y ：X（目标类型）= Y （源类型）
