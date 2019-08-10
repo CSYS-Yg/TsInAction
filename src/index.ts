@@ -2,6 +2,6 @@
 // import './enum';
 // import './function';
 // import './class';
-import './basis/advancedFive';
+import './es6/c';
 let hello: string = 'Hello TypeScript';
 document.querySelectorAll('.app')[0].innerHTML = hello;
