@@ -5,7 +5,7 @@
  * @Description: '23 | 使用命名空间 - 拆分' 
  * @Date: 2019-08-10 17:12:38 
  * @Last Modified by: Yx_Zou
- * @Last Modified time: 2019-08-10 17:41:11
+ * @Last Modified time: 2019-08-12 14:31:30
  */
 /**
  * 命名空间 Shape 分布在 a.ts 与 b.ts 两个文件中
