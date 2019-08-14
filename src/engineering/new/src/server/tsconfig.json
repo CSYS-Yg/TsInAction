@@ -1,0 +1,21 @@
+/*
+ * @Author: Yx_Zou 
+ * @Description: 'server工程文件配置' 
+ * @Date: 2019-08-15 00:56:50 
+ * @Last Modified by: Yx_Zou
+ * @Last Modified time: 2019-08-15 01:05:36
+ */
+{
+    // 继承全局基础配置
+    "extends": "../../tsconfig.json",
+    // 设置输出目录
+    "compilerOptions": {
+        "outDir": "../../../../../dist/server"
+    },
+    // 配置依赖的工程
+    "references": [
+        {
+            "path": "../common"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+/*
+ * @Author: Yx_Zou 
+ * @Description: 'engineering/old 整个工程文件配置' 
+ * @Date: 2019-08-15 00:56:50 
+ * @Last Modified by: Yx_Zou
+ * @Last Modified time: 2019-08-15 01:05:36
+ */
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "strict": true,
+        // 输出目录
+        "outDir": "../../../dist"
+    },
+    // 去除顶级目录 src
+    "include": [
+        "./src"
+    ]
+}
