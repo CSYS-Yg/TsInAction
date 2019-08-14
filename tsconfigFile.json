@@ -1,9 +1,9 @@
 /*
  * @Author: Yx_Zou 
- * @Description: '26-28 配置 tsconfig.json' 
+ * @Description: '26 配置 tsconfig.json' 
  * @Date: 2019-08-14 13:31:14 
  * @Last Modified by: Yx_Zou
- * @Last Modified time: 2019-08-14 14:20:19
+ * @Last Modified time: 2019-08-14 14:23:57
  */
 // 若 tsconfig.json 没有任何配置，则会按默认配置编译当前目录下所有 Ts 文件,控制台输入命令 "tsc" 编译所有 ts 文件
 // tsconfig.json 配置
