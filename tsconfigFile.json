@@ -1,0 +1,36 @@
+/*
+ * @Author: Yx_Zou 
+ * @Description: '26-28 配置 tsconfig.json' 
+ * @Date: 2019-08-14 13:31:14 
+ * @Last Modified by: Yx_Zou
+ * @Last Modified time: 2019-08-14 14:20:19
+ */
+// 若 tsconfig.json 没有任何配置，则会按默认配置编译当前目录下所有 Ts 文件,控制台输入命令 "tsc" 编译所有 ts 文件
+// tsconfig.json 配置
+// {
+//   // 编译器需要编译的单个文件列表
+//   "files": [
+//     "src/c.ts" // 控制台输入命令 "tsc"，只会编译 c.ts 文件
+//   ],
+//   // 编译器需要编译的文件，或者是目录
+//   "include": [
+//     "src/es6", // 控制台输入命令 "tsc"，只会编译 src目录下 es6 所有文件.
+//     // 通位符 *
+//     "src/*", // 只会编译 src 一级目录下文件
+//     "src/*/*" // 只会编译 src 二级目录下文件
+//   ],
+//   // 编译器需要排除编译的文件，或者是目录
+//   // Ts 默认会排除 node_modules 下的所有文件，也会排除所有的声明文件
+//   "exclude": [
+//     "src/libs" // 控制台输入命令 "tsc"，会排除 src 目录下 libs 所有文件.
+//   ]
+// }
+// 配置文件的继承
+{
+  // 导入配置
+  "extends": "./tsconfigi.base.json",
+  // 也可以覆盖掉 base 配置
+  "exclude": [], // 控制台输入命令 "tsc"，src 目录下 libs 所有文件，也会被编译。
+  // 保存时自动编译 Ts 文件，现在 vscode 暂不支持
+  "compileOnSave": true
+}
