@@ -35,10 +35,10 @@ function log1<T>(value: T): T {
 // 调用方式
 
 // 直接规定类型
-log1<string[]>([ 'a', 'b' ]);
+log1<string[]>(['a', 'b']);
 
 // 利用 TS 类型推断
-log1([ 'a', 'b' ]);
+log1(['a', 'b']);
 
 // 泛型定义函数类型
 type log2 = <T>(value: T) => T;
